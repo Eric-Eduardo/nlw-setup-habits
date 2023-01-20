@@ -7,8 +7,7 @@ form.addEventListener("change", save); //ao mudar, executará a função"save"
 
 function add() {
 
-    // const today = new Date().toLocaleDateString('pt-br').slice(0, -5);
-    const today = "02/01";
+    const today = new Date().toLocaleDateString('pt-br').slice(0, -5);
     const dayExists = nlwSetup.dayExists(today);
 
     if (dayExists) {
